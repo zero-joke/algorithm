@@ -15,7 +15,7 @@ public class Graph {
     public Graph(int V) {
         this.V = V;
         this.E = 0;
-        adj = new Bag[V];
+        adj = (Bag<Integer>[]) new Bag[V];
         for (int i = 0; i < V; i++) {
             adj[i] = new Bag<Integer>();
         }
@@ -37,7 +37,7 @@ public class Graph {
     }
 
     // 返回和v相连的所有顶点
-    public Iterator<Integer> adj(int v) {
-        return adj[v].iterator();
+    public Iterable<Integer> adj(int v) {
+        return adj[v];
     }
 }

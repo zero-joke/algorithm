@@ -3,7 +3,7 @@ package base;
 import java.util.Iterator;
 
 public class Bag<T> implements Iterable<T> {
-
+    private int size;
     private Node first;
 
     private class Node {
@@ -16,6 +16,11 @@ public class Bag<T> implements Iterable<T> {
         first = new Node();
         first.data = t;
         first.next = oldFirst;
+        ++size;
+    }
+
+    public int size() {
+        return size;
     }
 
     @Override
@@ -50,6 +55,7 @@ public class Bag<T> implements Iterable<T> {
                 pre.next = current.next;
                 current = current.next;
             }
+            --size;
         }
     }
 }
