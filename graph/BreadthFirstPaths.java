@@ -41,7 +41,7 @@ public class BreadthFirstPaths {
     }
 
     public Iterable<Integer> pathTo(int w) {
-        if (!marked(w))
+        if (!marked[w])
             return null;
         Stack<Integer> stack = new Stack<>();
         for (int x = w; x != s; x = edgeTo[x])

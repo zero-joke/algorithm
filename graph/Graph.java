@@ -1,7 +1,5 @@
 package graph;
 
-import java.util.Iterator;
-
 import base.Bag;
 
 /**
