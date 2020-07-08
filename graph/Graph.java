@@ -1,7 +1,5 @@
 package graph;
 
-import java.util.Iterator;
-
 import base.Bag;
 
 /**
@@ -39,5 +37,17 @@ public class Graph {
     // 返回和v相连的所有顶点
     public Iterable<Integer> adj(int v) {
         return adj[v];
+    }
+
+     // 图的邻接表的字符串表示
+     public String toString() {
+        String s = V + " vertices, " + E + " edges\n";
+        for (int v = 0; v < V; v++) {
+            s += v + ": ";
+            for (int w : this.adj(v))
+                s += w + " ";
+            s += "\n";
+        }
+        return s;
     }
 }
