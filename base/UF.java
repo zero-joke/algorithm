@@ -41,7 +41,7 @@ public class UF {
     // p(0 到 N-1)所在的分量的标识符
     public int find(int p) {
         while (p != id[p]) {
-            id[p] = id[id[p]];  // 路径压缩
+            id[p] = id[id[p]]; // 路径压缩
             p = id[p];
         }
         return p;
