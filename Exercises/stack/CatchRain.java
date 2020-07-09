@@ -1,4 +1,4 @@
-package Exercises;
+package Exercises.stack;
 
 import java.util.Stack;
 
