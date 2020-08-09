@@ -4,6 +4,7 @@ import java.util.Stack;
 
 /**
  * 深度优先搜算
+ * 实现技巧：根据深度优先搜算的定义，使用回溯
  */
 public class DepthFirstSearch {
     private boolean[] marked;

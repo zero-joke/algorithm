@@ -6,6 +6,7 @@ import java.util.Stack;
 
 /**
  * 广度优先搜素
+ * 实现技巧：借助队列
  */
 public class BreadthFirstPaths {
     private boolean[] marked;

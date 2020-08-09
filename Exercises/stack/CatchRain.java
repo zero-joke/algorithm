@@ -11,6 +11,10 @@ import java.util.Stack;
  */
 public class CatchRain {
 
+
+    /**
+        先计算每根柱子两边的最高柱子，每个柱子的纵向列上能接住的水容量=该柱子分别两边最高柱子中的较小值 - 当前柱子的高度
+     */
     public int trap_dymc(int heigth[]) {
         int anz = 0;
         int len = heigth.length;
@@ -21,13 +25,16 @@ public class CatchRain {
         for (int i = 1; i < len; i++)
             left_max[i] = Math.max(left_max[i - 1], heigth[i]);
         for (int j = len - 2; j >= 0; j--)
-            left_max[j] = Math.max(left_max[j + 1], heigth[j]);
+            right_max[j] = Math.max(right_max[j + 1], heigth[j]);
         for (int k = 0; k < len; k++) {
             anz += Math.min(left_max[k], right_max[k]) - heigth[k];
         }
         return anz;
     }
 
+    /**
+        利用栈，依次遍历只把递减的柱子放入栈中，如果遇到柱子比之前的高，则从栈中弹出之前的柱子，计算储水量
+    */
     public int trap_byStack(int heigth[]) {
         int anz = 0;
         int current = 0;
