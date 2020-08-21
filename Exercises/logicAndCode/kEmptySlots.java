@@ -1,3 +1,5 @@
+package Exercises.logicAndCode;
+
 public class kEmptySlots {
 
     public static int doLogic(int[] bulbs, int K) {
