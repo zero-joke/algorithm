@@ -4,16 +4,11 @@ import java.util.Iterator;
 
 public class Bag<T> implements Iterable<T> {
     private int size;
-    private Node first;
-
-    private class Node {
-        private T data;
-        private Node next;
-    }
+    private Node<T> first;
 
     public void add(T t) {
-        Node oldFirst = first;
-        first = new Node();
+        Node<T> oldFirst = first;
+        first = new Node<T>();
         first.data = t;
         first.next = oldFirst;
         ++size;
@@ -29,8 +24,8 @@ public class Bag<T> implements Iterable<T> {
     }
 
     private class ListIterator implements Iterator<T> {
-        private Node pre = null;
-        private Node current = first;
+        private Node<T> pre = null;
+        private Node<T> current = first;
         @Override
         public boolean hasNext() {
             return current != null;

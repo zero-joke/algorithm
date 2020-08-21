@@ -12,7 +12,7 @@ package Exercises.string;
 public class StringMatch {
     // 假设 q 是 len(B)<=len(A*q) 的最小数。我们只需要检查 B 是 A*q 的子串还是 A*(q+1) 的子串。
     // 如果我们尝试 k<q，那么 B 的长度大于 A*k，因此不能是子字符串。当 k=q+1 时，A*k 已经足够大，
-    // 可以尝试 B 的所有位置，即 A[i:i+len(B)] == B，i = 0, 1, ..., len(A) - 1。
+    // 可以尝试 A 的所有位置，即 A[i:i+len(B)] == B，i = 0, 1, ..., len(A) - 1。
     public int repeatedStringMatch(String A, String B) {
         int lenA = A.length();
         int lenB = B.length();
