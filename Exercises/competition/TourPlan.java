@@ -1,3 +1,5 @@
+package Exercises.competition;
+
 import java.util.*;
 
 public class TourPlan {
