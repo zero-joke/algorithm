@@ -1,5 +1,8 @@
 package graph;
 
+/**
+ * 带权重的有向边
+ */
 public class DirectedEdge {
     private final int v;    // 边的起点
     private final int w;    // 边的终点
