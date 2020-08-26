@@ -1,4 +1,4 @@
-package graph;
+package Fundamental.graph;
 
 import java.util.LinkedList;
 
@@ -15,22 +15,22 @@ public class DijkstraSP {
         distTo = new double[G.V()];
         linkedList = new LinkedList<>();
         for (int v = 0; v < G.V(); v++)
-              distTo[v] = Double.POSITIVE_INFINITY;
+            distTo[v] = Double.POSITIVE_INFINITY;
         distTo[s] = 0.0;
         linkedList.addLast(s);
-        while(!linkedList.isEmpty()) {
+        while (!linkedList.isEmpty()) {
             relax(G, linkedList.removeFirst());
         }
     }
 
     private void relax(EdgeWeightedDiGraph G, int v) {
-        for(DirectedEdge edge: G.adj(v)) {
+        for (DirectedEdge edge : G.adj(v)) {
             int w = edge.to();
-            if(distTo[w] > distTo[v] + edge.weight()) {
+            if (distTo[w] > distTo[v] + edge.weight()) {
                 distTo[w] = distTo[v] + edge.weight();
                 edgeTo[w] = edge;
             }
-            if(!linkedList.contains(w)) {
+            if (!linkedList.contains(w)) {
                 linkedList.addLast(w);
             }
         }

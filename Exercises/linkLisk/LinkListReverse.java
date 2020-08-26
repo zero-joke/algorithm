@@ -1,6 +1,6 @@
 package Exercises.linkLisk;
 
-import base.Node;
+import Fundamental.base.Node;
 
 /**
  * 链表反转

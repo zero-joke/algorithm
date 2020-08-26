@@ -1,4 +1,4 @@
-package string;
+package Fundamental.string;
 
 public class KMP {
     private final int R = 256;

@@ -1,4 +1,4 @@
-package graph;
+package Fundamental.graph;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

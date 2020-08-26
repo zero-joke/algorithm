@@ -1,4 +1,4 @@
-package graph;
+package Fundamental.graph;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -6,7 +6,8 @@ import java.util.Stack;
 
 /**
  * 广度优先搜素
- * 实现技巧：借助队列
+ * 
+ * 实现技巧：据深度优先搜算的定义，借助队列
  */
 public class BreadthFirstPaths {
     private boolean[] marked;

@@ -1,9 +1,9 @@
-package graph;
+package Fundamental.graph;
 
-import base.Bag;
+import Fundamental.base.Bag;
 
 /**
- * 数据结构：无向图
+ * 无向图
  */
 public class Graph {
     private int V; // 顶点数
@@ -19,14 +19,6 @@ public class Graph {
         }
     }
 
-    public int V() {
-        return V;
-    }
-
-    public int E() {
-        return E;
-    }
-
     // 向图中添加一条边 v-w
     public void addEdge(int v, int w) {
         adj[v].add(w);
@@ -39,8 +31,16 @@ public class Graph {
         return adj[v];
     }
 
-     // 图的邻接表的字符串表示
-     public String toString() {
+    public int V() {
+        return V;
+    }
+
+    public int E() {
+        return E;
+    }
+
+    // 图的邻接表的字符串表示
+    public String toString() {
         String s = V + " vertices, " + E + " edges\n";
         for (int v = 0; v < V; v++) {
             s += v + ": ";

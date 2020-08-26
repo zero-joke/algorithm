@@ -1,4 +1,4 @@
-package graph;
+package Fundamental.graph;
 
 /**
  * 无环加权有向图的最短路径算法

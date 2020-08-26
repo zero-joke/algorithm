@@ -1,4 +1,4 @@
-package graph;
+package Fundamental.graph;
 
 /**
  * 带权重的有向边

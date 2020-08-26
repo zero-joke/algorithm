@@ -1,4 +1,4 @@
-package base;
+package Fundamental.base;
 
 import java.util.Iterator;
 
@@ -11,7 +11,7 @@ public class Bag<T> implements Iterable<T> {
         first = new Node<T>();
         first.data = t;
         first.next = oldFirst;
-        ++size;
+        size++;
     }
 
     public int size() {
@@ -26,23 +26,26 @@ public class Bag<T> implements Iterable<T> {
     private class ListIterator implements Iterator<T> {
         private Node<T> pre = null;
         private Node<T> current = first;
+
         @Override
         public boolean hasNext() {
             return current != null;
         }
+
         @Override
         public T next() {
-            if(current == null) 
+            if (current == null)
                 throw new NullPointerException();
             pre = current;
             current = current.next;
             return pre.data;
         }
+
         @Override
         public void remove() {
-            if(current == null) 
+            if (current == null)
                 throw new NullPointerException();
-            if(current == first) {
+            if (current == first) {
                 first = first.next;
                 pre = null;
                 current = first;
