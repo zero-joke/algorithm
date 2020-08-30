@@ -1,4 +1,4 @@
-package Fundamental.string;
+package Fundamentals.string;
 
 public class KMP {
     private final int R = 256;
@@ -22,7 +22,7 @@ public class KMP {
     }
 
     private void initDfa() {
-        dfa[pat.charAt(0)][0] = 1;
+        dfa[pat.charAt(0)][0] = 1; // 注意dfa第一步的状态是在初始时设置好的，j从1开始遍历。
         for (int X = 0, j = 1; j < pat.length(); j++) {
             for (int c = 0; c < R; c++)
                 dfa[c][j] = dfa[c][X];

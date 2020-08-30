@@ -1,4 +1,4 @@
-package Fundamental.base;
+package Fundamentals.base;
 
 public class Node<T> {
     public T data;

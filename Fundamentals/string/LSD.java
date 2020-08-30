@@ -1,4 +1,4 @@
-package Fundamental.string;
+package Fundamentals.string;
 
 /**
  * 低位优先的字符串排序

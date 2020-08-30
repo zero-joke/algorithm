@@ -1,6 +1,6 @@
-package Fundamental.graph;
+package Fundamentals.graph;
 
-import Fundamental.base.Bag;
+import Fundamentals.base.Bag;
 
 /**
  * 加权无向图的数据类型

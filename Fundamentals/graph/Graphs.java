@@ -1,4 +1,4 @@
-package Fundamental.graph;
+package Fundamentals.graph;
 
 /**
  * 无向图常用处理方法

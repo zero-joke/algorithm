@@ -1,4 +1,4 @@
-package Fundamental.graph;
+package Fundamentals.graph;
 
 /**
  * 使用dfs检测图是否有环

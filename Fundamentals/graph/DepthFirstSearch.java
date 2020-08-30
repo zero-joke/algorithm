@@ -1,4 +1,4 @@
-package Fundamental.graph;
+package Fundamentals.graph;
 
 import java.util.Stack;
 
