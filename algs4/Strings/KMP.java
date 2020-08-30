@@ -1,4 +1,4 @@
-package Fundamentals.string;
+package algs4.Strings;
 
 public class KMP {
     private final int R = 256;

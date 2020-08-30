@@ -1,4 +1,4 @@
-package Fundamentals.string;
+package algs4.Strings;
 
 /**
  * 低位优先的字符串排序

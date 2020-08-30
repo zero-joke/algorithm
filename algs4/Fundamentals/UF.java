@@ -1,4 +1,4 @@
-package Fundamentals.base;
+package algs4.Fundamentals;
 
 import java.util.Arrays;
 

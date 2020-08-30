@@ -1,6 +1,6 @@
-package Fundamentals.graph;
+package algs4.Graphs;
 
-import Fundamentals.base.Bag;
+import algs4.Fundamentals.Bag;
 
 /**
  * 无向图

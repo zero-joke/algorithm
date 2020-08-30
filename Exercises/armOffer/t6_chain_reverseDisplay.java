@@ -3,7 +3,7 @@ package Exercises.armOffer;
 
 import java.util.ArrayList;
 
-import Fundamentals.base.Node;
+import algs4.Fundamentals.Node;
 
 
 /**

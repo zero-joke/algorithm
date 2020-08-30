@@ -1,4 +1,4 @@
-package Fundamentals.graph;
+package algs4.Graphs;
 
 import java.util.LinkedList;
 

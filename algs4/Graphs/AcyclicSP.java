@@ -1,4 +1,4 @@
-package Fundamentals.graph;
+package algs4.Graphs;
 
 /**
  * 无环加权有向图的最短路径算法

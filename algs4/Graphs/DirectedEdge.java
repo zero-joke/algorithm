@@ -1,4 +1,4 @@
-package Fundamentals.graph;
+package algs4.Graphs;
 
 /**
  * 带权重的有向边

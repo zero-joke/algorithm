@@ -1,4 +1,4 @@
-package Fundamentals.base;
+package algs4.Fundamentals;
 
 public class Node<T> {
     public T data;
