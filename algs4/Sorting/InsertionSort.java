@@ -1,5 +1,8 @@
 package algs4.Sorting;
 
+/**
+ * 插入排序
+ */
 public class InsertionSort {
     public void sort(Comparable<Object>[] arr) {
         for (int i = 1; i < arr.length; ++i) {

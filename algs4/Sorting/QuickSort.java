@@ -1,5 +1,8 @@
 package algs4.Sorting;
 
+/**
+ * 快速排序
+ */
 public class QuickSort {
 
     // 普通快排

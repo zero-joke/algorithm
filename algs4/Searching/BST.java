@@ -1,7 +1,7 @@
 package algs4.Searching;
 
 /**
- * 二叉查找数
+ * 二叉查找树
  */
 public class BST<Key extends Comparable<Key>, Value> {
 

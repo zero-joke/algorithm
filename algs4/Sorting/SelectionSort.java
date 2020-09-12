@@ -1,5 +1,8 @@
 package algs4.Sorting;
 
+/**
+ * 选择排序
+ */
 public class SelectionSort {
     public void sort(Comparable<Object>[] arr) {
         for (int i = 0; i < arr.length - 1; ++i) {
