@@ -53,7 +53,8 @@ public class WordSquares {
 
     private void print() {
         for (List<String> list : result) {
-            System.out.println("[" + list.stream().collect(Collectors.joining(", ")) + "]");
+            System.out.println(list.stream().collect(Collectors.joining("\n")));
+            System.out.println();
         }
     }
 
